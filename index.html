@@ -6,24 +6,13 @@
 
         <link rel="stylesheet" href="styles/navbar.css">
         <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/global.css">
 
         <!-- <script src="scripts/stars.js" defer></script> -->
+         <script src="scripts/navbar.js" defer></script>
         <title>Nicolas Okuly</title>
     </head>
     <body>
-        <nav class="navbar">
-            <!-- <div class="nav-logo-cont">
-                <img src="./images/monogram.png" alt="Monogram Image">
-            </div> -->
-
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/contact.html">Contact</a>
-                <a href="/projects.html">Projects</a>
-                <a href="/resume.html">Resume</a>
-            </div>
-        </nav>
-
         <header class="hero">
             <div class="hero-cont">
                 <h1>Nicolas Okuly</h1>
@@ -32,5 +21,52 @@
             </div>
         </header>
 
+        <nav class="navbar">
+            <div class="nav-logo-cont">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <button class="nav-toggle">
+                ☰
+            </button>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/resume.html">Resume</a>
+            </div>
+        </nav>
+
+        <div class="card">
+            <div class="c-span">
+                <h2 class="c-head">About Me</h2>
+            </div>
+            <div class="c-left">
+                Put a graphic here
+            </div>
+            <div class="c-right">
+                Put an about me here
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <div class="c-span">
+                <h2 class="c-head">Projects</h2>
+            </div>
+            <div class="c-left">
+                Put some cool projects here
+            </div>
+            <div class="c-right">
+                and here
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; <span id="date"></span> - Nicolas Okuly</p>
+            <script>
+                document.getElementById("date").innerHTML = `${new Date().getFullYear()}`;
+            </script>
+        </footer>
     </body>
 </html>

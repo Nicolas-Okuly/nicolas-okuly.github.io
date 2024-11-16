@@ -1,7 +1,7 @@
 .hero {
-    z-index: -1;
-    top: 0;
-    position: absolute;
+    z-index: 0;
+    /* top: 0;
+    position: absolute; */
     width: 100%;
     height: 100vh;
     background-color: gray;
@@ -24,12 +24,16 @@
 .hero-cont > * { margin: 7.5px; }
 #hero-btn {
     border-radius: 15px;
-    padding: 7px;
+    padding: 10px;
     border: none;
     font-size: 1.2rem;
     margin: 5px;
     background-color: black;
     color: white;
+}
+#hero-btn:hover {
+    background-color: darkblue;
+    text-decoration: underline;
 }
 
 .stars {
@@ -45,4 +49,19 @@
     0% { opacity: 0.8; }
     50%, 60%, 70% { opacity: 0; }
     90%, 100% { opacity: 0.8; }
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+    padding: 2.5em;
+}
+.c-span {
+    text-align: center;
+    grid-column: span 2;
+}
+.c-head {
+    font-size: 3rem;
 }
