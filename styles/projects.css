@@ -1,0 +1,69 @@
+body { 
+    background-color: #eee;
+}
+#proj-head {
+    text-align: center;
+    width: 100%;
+    background-color: gray;
+    background-image: url('../images/topography.svg');
+    padding: 20px;
+}
+#proj-head-cont {
+    margin: 0 auto;
+    min-width: 50%;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 25px;
+    user-select: none;
+    backdrop-filter: blur(2px);
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+}
+
+.search-area {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 35vh;
+}
+.search-area > * { margin: 1em auto; }
+#proj-search {
+    display: flex;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: #fff;
+    margin: 1.5em auto;
+    padding: 1px;
+}
+#proj-search > * { font-size: 1em; }
+#proj-search > img {
+    height: calc(1em + 1px + 10px);
+    margin: 3px;
+    background-color: white;
+}
+#proj-search > input {
+    width: 100%;
+    padding: 5px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 0;
+}
+#proj-search > input:focus { outline: none; }
+#search-line { border: 1px solid #2F2F2F; height: 100%; }
+
+@media (max-width: 768px) {
+    #proj-search { width: 90%;}
+    .search-area > * { margin: 0.5em 0; }
+    /* .search-area { height: 20vh; } */
+}
+
+#comingsoon {
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    margin: 1em;
+}
