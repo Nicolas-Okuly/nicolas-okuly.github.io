@@ -34,6 +34,7 @@
     background-color: black;
     position: relative;
     color: white;
+    transition: background-color 0.3s ease;
 }
 #hero-btn:hover, .proj-btn:hover {
     background-color: darkblue;
@@ -97,6 +98,61 @@
     margin-top: 1.5em;
 }
 
+.c-left {
+    text-align: center;
+    justify-items: center;
+    padding: 12px;
+}
+#about-img-cont > img {
+    width: 100%;
+    box-shadow: 5px 5px 50px black;
+    border: 2px solid black;
+    max-height: 75vh;
+}
+#gh-about-link { text-decoration: none; }
+.about-btn {
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+    margin: 0 auto;
+}
+.about-btn > * { margin: 2px; }
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.25rem;
+}
+.about-cont {
+    padding: 12px;
+    margin: 0 auto;
+}
+.about-cont > * { margin: 2.5em; }
+.about-para > p { font-size: 1.3em; }
+.about-lang {
+    text-align: center;
+    margin-top: 2em;
+}
+.about-lang > h3 { font-size: 2rem; }
+.about-lang > p {
+    display: inline-block;
+    background-color: #0F0F0F;
+    border-radius: 5px;
+    color: white;
+    width: fit-content;
+    margin: 2px 0;
+    padding: 12px;
+    box-shadow: 1px 1px 10px black;
+    transition: transform 0.5s ease;
+}
+.about-lang > p:hover {
+    transform: scale(1.2);
+}
+
 .proj-card {
     background-color: #fff;
     padding: 6px;
@@ -106,9 +162,11 @@
 }
 .proj-card > * { margin: 6px; }
 .proj-thumbnail { width: fit-content; align-self: center; margin-right: 20px;}
-.proj-thumbnail-img { width: 100px; filter: brightness(0) saturate(100%); }
+.proj-thumbnail-img { width: 100px; }
+.black { filter: brightness(0) saturate(100%); }
 .proj-desc > p { text-align: left; }
 .proj-desc > h3 { font-size: 1.5em; margin: 6px; }
+#seemore { width: 50%; }
 
 @media (max-width: 786px) {
     .card {
@@ -119,9 +177,17 @@
         grid-column: span 1;
         grid-template-columns: 1fr;
     }
+    .glorious-three {
+        display: none;
+    }
+    .about-cont > * { margin: 12px; }
+    .about-btn { align-items: center; }
+    #seemore { width: 75%; }
+
 }
 
 @media (max-width: 550px) {
     .proj-card { flex-direction: column;  margin: 6px; }
     .proj-thumbnail { margin: 0 auto; }
+    .about-para > p { font-size: 1.2rem; }
 }

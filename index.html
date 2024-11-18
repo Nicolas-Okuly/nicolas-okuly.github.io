@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="styles/global.css">
 
-        <!-- <script src="scripts/stars.js" defer></script> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
          <script src="scripts/navbar.js" defer></script>
         <title>Nicolas Okuly</title>
         <link rel="icon" href="images/final-monogram.svg">
@@ -43,10 +44,36 @@
                 <h2 class="c-head">About Me</h2>
             </div>
             <div class="c-left">
-                Put a graphic here
+                <div id="about-img-cont">
+                    <img src="/images/headshot.jpg" alt="Blank Profile Picture">
+                    <a href="https://github.com/Nicolas-Okuly" id="gh-about-link" target="_blank">
+                        <button class="proj-btn about-btn" type="button">
+                            <i class="fa fa-github"></i> 
+                            <p>See my GitHub</p>
+                        </button>
+                    </a>
+                </div>
             </div>
             <div class="c-right">
-                Put an about me here
+                <div class="about">
+                    <div class="about-cont">
+                        <div class="about-para">
+                            <p>Originating from Washington State, I started programming in middle school. I grew my skills and moved to Arizona, I made fun little websites and small programming projects. I didn't take any classes until my junior year when I joined West-MEC. I spent the time in between middle school and West-MEC teaching myself and doing weird things.</p>
+                        </div>
+                        <hr>
+                        <div class="about-lang">
+                            <h3>Languages</h3>
+                            <br>
+                            <p><img src="/images/languages/html.png" alt="HTML Icon"></p>
+                            <p><img src="/images/languages/css.png" alt="CSS Icon"></p>
+                            <p><img src="/images/languages/javascript.png" alt="JavaScript Icon"></p>
+                            <p><img src="/images/languages/node.png" alt="Node Icon"></p>
+                            <p><img src="/images/languages/python.png" alt="Python Icon"></p>
+                            <p><img src="/images/languages/c++.png" alt="C++ Icon"></p>
+                            <p><img src="/images/languages/c.png" alt="C Icon"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -60,7 +87,7 @@
             <div class="c-proj">
                 <div class="proj-card">
                     <div class="proj-thumbnail">
-                        <img src="/images/thumbnails/monogram.svg" alt="Monogram" class="proj-thumbnail-img">
+                        <img src="/images/thumbnails/monogram.svg" alt="Monogram" class="proj-thumbnail-img black">
                     </div>
                     <div class="proj-desc">
                         <h3>Monogram</h3>
@@ -72,7 +99,7 @@
 
                 <div class="proj-card">
                     <div class="proj-thumbnail">
-                        <img src="/images/thumbnails/console.png" alt="" class="proj-thumbnail-img">
+                        <img src="/images/thumbnails/console.png" alt="Console" class="proj-thumbnail-img">
                     </div>
                     <div class="proj-desc">
                         <h3><code>console.log</code></h3>
@@ -81,6 +108,47 @@
                         <a href="/projects.html#consolelog"><button class="proj-btn" type="button">Read more</button></a>
                     </div>
                 </div>
+
+                <div class="proj-card">
+                    <div class="proj-thumbnail">
+                        <img src="/images/thumbnails/resume.svg" alt="Resume" class="proj-thumbnail-img">
+                    </div>
+                    <div class="proj-desc">
+                        <h3>Resume Templates</h3>
+                        <p>I made this project as a part of West-MEC in 2024. It has 3 different resume types, 
+                            a super basic peice of A4 paper (not printable), a lightweight resume, and a full-fledged resume page.</p>
+                        <a href="/projects.html#resume"><button class="proj-btn" type="button">Read more</button></a>
+                    </div>
+                </div>
+
+                <div class="proj-card glorious-three">
+                    <div class="proj-thumbnail">
+                        <img src="/images/thumbnails/calculator.svg" alt="Calculator" class="proj-thumbnail-img">
+                    </div>
+                    <div class="proj-desc">
+                        <h3>Radical Simplification Program</h3>
+                        <p>This program was written to simplify radicals on the Ti-84 Plus CE calculators.
+                            I learned how to simplify them in Algebra II in 2023 and chose to make it easier by making a program for it.
+                            This is one of the first programs I wrote for the calculator and encouraged me to learn C to write better, faster programs.
+                        </p>
+                        <a href="/projects.html#radsimp"><button class="proj-btn" type="button">Read more</button></a>
+                    </div>
+                </div>
+
+                <div class="proj-card glorious-three">
+                    <div class="proj-thumbnail">
+                        <img src="/images/thumbnails/camera.svg" alt="Photo" class="proj-thumbnail-img">
+                    </div>
+                    <div class="proj-desc">
+                        <h3>Plane Photography</h3>
+                        <p>At the Buckeye Air Fair in 2024, I took some photographs of the planes. It was a lot of fun to watch the planes and take photos of them.</p>
+                        <a href="/projects.html#airfair"><button class="proj-btn" type="button">Read more</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-span">
+                <a href="/projects.html"><button class="proj-btn" type="button" id="seemore">See more</button></a>
             </div>
         </div>
 
