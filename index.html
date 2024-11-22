@@ -20,8 +20,12 @@
             <div class="hero-cont">
                 <h1>Nicolas Okuly</h1>
                 <h2>Web Developer, Software Engineer, Graphic Designer</h2>
-                <a href="/resume.html"><button id="hero-btn" type="button">See my resume</button></a>
+                <a href="/projects.html"><button id="hero-btn" type="button">View My Projects</button></a>
             </div>
+
+            <a onclick="document.getElementById('about-me').scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })">
+                <div class="hero-arrow hero-cont">▼</div>
+            </a>
         </header>
 
         <nav class="navbar">
@@ -39,7 +43,7 @@
             </div>
         </nav>
 
-        <div class="card">
+        <div class="card" id="about-me">
             <div class="c-span">
                 <h2 class="c-head">About Me</h2>
             </div>

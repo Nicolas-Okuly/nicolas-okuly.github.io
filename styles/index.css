@@ -1,3 +1,4 @@
+/* Hero section of the main page */
 .hero {
     z-index: 0;
     width: 100%;
@@ -6,9 +7,12 @@
     background-image: url('../images/topography.svg');
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+/* The white box with the hero content */
 .hero-cont {
     text-align: center;
     height: max-content;
@@ -25,6 +29,8 @@
     font-size: 1.25em;
 }
 .hero-cont > * { margin: 7.5px; }
+
+/* The hero button and the project buttons lower in the page */
 #hero-btn, .proj-btn {
     border-radius: 15px;
     padding: 10px;
@@ -34,7 +40,8 @@
     background-color: black;
     position: relative;
     color: white;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
+    margin-top: auto;
 }
 #hero-btn:hover, .proj-btn:hover {
     background-color: darkblue;
@@ -45,7 +52,7 @@
     opacity: 0;
     transform: translateX(-10px);
     padding: 1px;
-    transition: opacity 0.3s ease, transform 0.3s ease, padding 0s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease, padding 0s ease;
 }
 #hero-btn:hover::after, .proj-btn:hover::after {
     content: "➤";
@@ -59,6 +66,32 @@
     margin: 12px;
 }
 
+/* The arrow that scrolls the user down when clicked */
+.hero-arrow {
+    border-radius: 100%;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    position: absolute;
+    bottom: 20px;
+    padding: 15px;
+    width: 75px;
+    height: 75px;
+    color: #2F2F2F;
+    transition-property: background-color, opacity, color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    left: calc(50% - 75px);
+}
+.hero-arrow:hover {
+    background-color: #2F2F2F;
+    opacity: 0.9;
+    color: #FFF;
+}
+.hero-arrow > a { color: inherit; text-decoration: none;}
+
+
+/* Abandoned stars */
 .stars {
     width: 5px;
     height: 5px;
@@ -74,6 +107,8 @@
     90%, 100% { opacity: 0.8; }
 }
 
+
+/* Not really a card, but each individual page */
 .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -97,17 +132,19 @@
     gap: 10px;
     margin-top: 1.5em;
 }
-
 .c-left {
     text-align: center;
     justify-items: center;
     padding: 12px;
 }
+
+/* The about me left side */
 #about-img-cont > img {
     width: 100%;
     box-shadow: 5px 5px 50px black;
     border: 2px solid black;
     max-height: 75vh;
+    aspect-ratio: 3/4;
 }
 #gh-about-link { text-decoration: none; }
 .about-btn {
@@ -120,6 +157,7 @@
 }
 .about-btn > * { margin: 2px; }
 
+/* The about me right side */
 .about {
     display: flex;
     flex-direction: column;
@@ -149,10 +187,10 @@
     box-shadow: 1px 1px 10px black;
     transition: transform 0.5s ease;
 }
-.about-lang > p:hover {
-    transform: scale(1.2);
-}
+.about-lang > p:hover { transform: scale(1.2); }
 
+
+/* Projects page */
 .proj-card {
     background-color: #fff;
     padding: 6px;
@@ -168,7 +206,23 @@
 .proj-desc > h3 { font-size: 1.5em; margin: 6px; }
 #seemore { width: 50%; }
 
+
+/* Any and all media queries */
+@media (orientation: landscape) and (max-width: 786) {
+    #about-img-cont > img { display: none; }
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(auto, 100px);
+    }
+    .c-span, .c-proj {
+        grid-column: span 1;
+        grid-template-columns: 1fr;
+    }
+}
 @media (max-width: 786px) {
+    .hero-arrow {
+        display: none;
+    }
     .card {
         grid-template-columns: 1fr;
         grid-template-rows: minmax(auto, 100px);
