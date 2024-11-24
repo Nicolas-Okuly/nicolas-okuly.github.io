@@ -3,8 +3,8 @@
     z-index: 0;
     width: 100%;
     height: 100vh;
-    background-color: gray;
-    background-image: url('../images/topography.svg');
+    background-color: #2F2F2F;
+    background-image: url('../images/circuit-board.svg');
     overflow: hidden;
     display: flex;
     flex-direction: column;
