@@ -137,3 +137,63 @@ body {
     #proj-search { width: 90%;}
     .search-area > * { margin: 0.5em 0; }
 }
+
+/* Style the injected HTML for Projects */
+.project {
+    background-color: #FFF;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 12px;
+    box-shadow: 5px 5px 12px gray;
+}
+.project_meta {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.project hr { margin: 1em 0; }
+.project h3 { font-size: 1.5em; }
+.project h4 { color: rgba(0, 0, 0, 0.8) }
+
+#proj-link {
+    text-align: center;
+}
+.project a,
+.project a:visited,
+.project a:active {
+    color: white;
+    display: block;
+    background-color: #2F2F2F;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin: 12px auto;
+    margin-bottom: 0;
+    width: fit-content;
+}
+.project a:hover {
+    background-color: #0000EE;
+    text-decoration: underline;
+}
+
+@media (max-width: 1025px) and (min-width: 400px) {
+    .project_meta {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 786px) {
+    .project a {
+        width: 75%;
+    }
+}
+
+@media (max-width: 399px) {
+    .project_meta {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
