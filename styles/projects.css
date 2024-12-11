@@ -145,6 +145,8 @@ body {
     margin: 15px;
     padding: 12px;
     box-shadow: 5px 5px 12px gray;
+    width: 75%;
+    margin: 15px auto;
 }
 .project_meta {
     display: grid;
