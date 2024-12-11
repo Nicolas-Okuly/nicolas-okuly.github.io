@@ -67,6 +67,8 @@ body {
     margin: 1em;
 }
 
+/* They only popped up on Safari so I had to add this. */
+#projects { list-style-type: none; }
 
 /* GitHub Section */
 .github {
@@ -190,6 +192,9 @@ body {
 @media (max-width: 786px) {
     .project a {
         width: 75%;
+    }
+    .project {
+        width: 90%;
     }
 }
 
