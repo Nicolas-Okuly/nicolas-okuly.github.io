@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/contact.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Nicolas Okuly - Contact</title>
+        <script src="scripts/navbar.js" defer></script>
+        <script src="scripts/email.js" defer></script>
+        <link rel="icon" href="images/final-monogram.svg">
+        <link rel="icon" href="images/favicon.ico">
+    </head>
+    <body onload="resize()">
+        <nav class="navbar">
+            <div class="nav-logo-cont">
+                <img src="images/final-monogram.svg" alt="Logo">
+            </div>
+            <button class="nav-toggle">
+                ☰
+            </button>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/resume.pdf">Resume</a>
+            </div>
+        </nav>
+
+        <div class="contact-cont">
+            <aside class="contact-method" id="meth">
+                <details id="moc">
+                    <summary>Methods of Contact</summary>
+                    <a href="mailto:nicolasokuly@outlook.com" target="_blank"><i class="fa fa-envelope"></i> nicolasokuly@outlook.com</a><br>
+                    <a href="https://github.com/nicolas-okuly" target="_blank"><i class="fa fa-github"></i> Nicolas-Okuly</a><br>
+                    <a href="https://instagram.com/nicolasokuly" target="_blank"><i class="fa fa-instagram"></i> nicolasokuly</a><br>
+                </details>
+
+                <br><hr><br>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426003.11688693933!2d-112.98801890112085!3d33.471462185869285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d4ab4adc82500d%3A0xc06d24efdda9f7f6!2sBuckeye%2C%20AZ!5e0!3m2!1sen!2sus!4v1734477203620!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </aside>
+
+            <main class="contact-form" id="cform">
+                <h1>Contact Me</h1>
+                <br>
+                <form onsubmit="handleSubmit()" id="contact-me">
+                    <p>
+                        My name is 
+                        <input type="text" name="name" autocomplete="name" required>, I need 
+                        <input type="text" name="subject" maxlength="75" autocomplete="off" required>, and my email is 
+                        <input type="email" name="email" id="email" required>.
+                    </p>
+                    <br>
+
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="msg"></p>
+            </main>
+        </div>
+    </body>
+</html>

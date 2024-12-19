@@ -1,0 +1,121 @@
+.required::before {
+    content: "*";
+    color: red;
+}
+
+body {
+    background-image: url("/images/circuit-board.svg");
+    background-color: rgba(47, 47, 47, 0.9);
+    background-blend-mode: lighten;
+}
+
+.contact-cont {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height: calc(100vh - 73.0781px);
+    padding: 15px;
+}
+.contact-cont > * {
+    background-color: #FFF;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+    padding: 12px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    word-wrap: break-word;
+}
+.contact-method iframe {
+    width: 100%;
+    height: fit-content;
+}
+.contact-method { 
+    font-size: 1.2em;
+    grid-column: span 2;
+}
+.contact-form {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: x-large;
+    font-weight: bold;
+}
+.contact-form > h1 {
+    text-align: center;
+}
+input[type="text"],
+input[type="email"] {
+    padding: 2px;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: black;
+    font-size: large;
+    transition: padding 0.3s ease-in-out;
+}
+input::placeholder { color: black; }
+input[type="text"]:focus,
+input[type="email"]:focus {
+    padding: 5px;
+    outline: none;
+    background-color: #EEE;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+#det-prompt { width: 100%; }
+textarea {
+    width: 100%;
+    padding: 2px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: large;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+button[type="submit"]:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-decoration: underline;
+}
+
+#email-disc {
+    font-size: medium;
+    line-height: 2em;
+    color: red;
+    font-weight: bold;
+}
+
+#msg {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    display: none;
+    font-size: 1rem;
+    text-align: center;
+    margin: 15px auto;
+}
+#moc > a:active,
+#moc > a:visited,
+#moc > a {
+    color: blue;
+}
+
+
+@media (max-width: 786px) {
+    .contact-cont { grid-template-columns: 1fr; }
+    .contact-form { grid-column: span 1; }
+    .contact-cont > * { width: 100% }
+}
+
