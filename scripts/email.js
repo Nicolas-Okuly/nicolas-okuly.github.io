@@ -2,7 +2,7 @@ document.getElementById("contact-me").addEventListener("submit", (e) => { e.prev
 
 function handleSubmit() {
     const form = document.getElementById("contact-me");
-    const url = "https://script.google.com/macros/s/AKfycbwkEr2QJYQa8oiKCDL4_1ZGouo1RfbT2j6tEz2-QCkdyXgVcoWvPlo30UJuRTUbCz0/exec";
+    const url = "https://script.google.com/macros/s/AKfycbxCTtkQ9ru_O1Wx6Hme8e7LB8i6BzGMbBo0PCMidctTeNRr6yAb1u8YtcNHuHpkzoRw/exec";
 
     const values = {
         "name": form["name"].value,
