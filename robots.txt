@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: 
-Sitemap: https://nicolas-okuly.github.io/sitemap.xml
+Disallow:
